@@ -16,6 +16,7 @@
                 <div class="container-1400">
                     <ul>
                         <li><a href="#Abstract">Abstract</a></li>
+                        <li><a href="#Architecture">Architecture</a></li>
                         <li><a href="#Results">Results</a></li>
                         <li><a href="#Future_Work">Future Work</a></li>
                         <li><a href="#Publication">Pre-publication</a></li>
@@ -35,7 +36,9 @@
                     <p> An accurate and robust large-scale localization system is an integral component for active areas of research such as autonomous vehicles and augmented reality. To this end, many learning algorithms have been proposed that predict 6DOF camera pose from RGB or RGB-D images. However, previous methods that incorporate depth typically treat the data the same way as RGB images, often adding depth maps as additional channels to RGB images and passing them through convolutional neural networks (CNNs). In this paper, we show that converting depth maps into pseudo-LiDAR signals, previously shown to be useful for 3D object detection, is a better representation for camera localization tasks by projecting point clouds that can accurately determine 6DOF camera pose. This is demonstrated by first comparing localization accuracies of a network operating exclusively on pseudo-LiDAR representations, with networks operating exclusively on depth maps. We then propose FusionLoc, a novel architecture that uses pseudo-LiDAR to regress a 6DOF camera pose. FusionLoc is a dual stream neural network, which aims to remedy common issues with typical 2D CNNs operating on RGB-D images. The results from this architecture are compared against various other state-of-the-art deep pose regression implementations using the 7 Scenes dataset. The findings are that FusionLoc performs better than a number of other camera localization methods, with a notable improvement being, on average, 0.33m and 4.35&#176 more accurate than RGB-D PoseNet. By proving the validity of using pseudo-LiDAR signals over depth maps for localization, there are new considerations when implementing large-scale localization systems. </p>
                 </div>
             </div>
+        </a>
 
+        <a id="Architecture">
             <h2>Architecture</h2>
 
             <div class="images">

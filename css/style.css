@@ -28,7 +28,7 @@ table {
 }
 
 td {
-    padding: 0 15px;
+    padding: 0 10px;
 }
 
 nav {
@@ -36,7 +36,7 @@ nav {
     overflow: hidden;
 }
 
-ul {
+ul.navBar {
     list-style-type: none;
     margin: 0;
     display: flex;
@@ -45,16 +45,16 @@ ul {
     padding-inline-start: 0px;    
 }
   
-li {
+li.navBar {
     float: left;
     border-right: 1px solid #bbb;
 }
 
-li:last-child {
+li.navBar:last-child {
     border-right: none;
 }
   
-li a {
+li.navBar a {
     display: inline-block;
     color: white;
     text-align: center;
@@ -63,7 +63,7 @@ li a {
     font-family: 'Roboto Condensed', sans-serif;
 }
   
-li a:hover:not(.active) {
+li.navBar a:hover:not(.active) {
     background-color: #111;
 }
   
